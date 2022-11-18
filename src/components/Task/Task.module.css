@@ -1,0 +1,85 @@
+.task button {
+    background: transparent;
+    border: none;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+    transition: color 0.2s;
+}
+
+.task button svg {
+    box-sizing: border-box;
+    padding: .25rem;
+}
+
+.task button:hover {
+    transition: color 0.2s;
+    color: var(--danger);
+    background: var(--gray-400);
+    border-radius: 8px;
+}
+
+.task label {
+    padding: 0 1rem;
+    width: var(--width);
+}
+
+.task {
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: .75rem 0;
+}
+
+[role="checkbox"] {
+    box-sizing: border-box;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+[role="checkbox"]:focus {
+    border: 2px solid var(--purple);
+}
+
+[aria-checked="true"]::before {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background: var(--purple-dark);
+    content: "\2713";
+    line-height: 1.25;
+    padding: 0 .23rem;
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+[aria-checked="true"]:hover {
+    background: var(--purple);
+}
+
+[aria-checked="true"] + label {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+[aria-checked="false"]::before {
+    width: 1.5rem;
+    height: 1.25rem;
+    border-radius: 100%;
+    border: 2px solid var(--blue);
+    content: "";
+}
+
+[aria-checked="false"]:hover {
+    border-color: var(--blue-dark);
+    border-width: 2px;
+}

@@ -1,0 +1,16 @@
+.noTasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    color: var(--gray-300);
+
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+}
+
+.noTasks img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+}

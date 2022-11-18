@@ -1,0 +1,22 @@
+.taskInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskInfo > strong {
+    color: var(--blue);
+    margin-bottom: .75rem;
+}
+
+.taskInfo > strong:last-child {
+    color: var(--purple);
+}
+
+.taskInfo > strong span {
+    margin-left: .5rem;
+    background-color: var(--gray-400);
+    border-radius: 8px;
+    font-size: .875rem;
+    padding: 0 .5rem;
+    color: var(--gray-200);
+}

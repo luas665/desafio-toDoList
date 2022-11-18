@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+
+
+main {
+    width: var(--width);
+}
+
+.taskList {
+    gap: .5px;
+}
